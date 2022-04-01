@@ -10,5 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Auth::routes()
-Route::get('/', 'TimeController@index');
+Auth::routes();
+Route::get('/', 'TimeController@index')->name('times.index');
+Route::resource('/times', 'TimeController')->except(['index'])->middleware('auth'); 
