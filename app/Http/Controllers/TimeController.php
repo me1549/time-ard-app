@@ -1,22 +1,27 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Time;
+use App\Http\Requests\TimesRequest;
 use Illuminate\Http\Request;
 
 class TimeController extends Controller
 {
     public function index() {
-        $times = [
-            (object) [
-                'id' => 1,
-                'created_at' => now(),
-                'user' => (object) [
-                    'id' => 1,
-                    'name' => 'ユーザー名1',
-                ],
-            ],
-        ];
+            $times = Time::all()->sortByDesc('created_at');
             return view('times.index', ['times' => $times]);
+    }
+
+    public function create()
+    {
+        return view('times.create');    
+    }
+
+    public function store(TimesRequest $request, Time $times)
+    {
+        $times->body = $request->body;
+        $times->user_id = $request->user()->id;
+        $times->save();
+        return redirect()->route('times.index');
     }
 }
