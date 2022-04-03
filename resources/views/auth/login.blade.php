@@ -28,12 +28,14 @@
  
                 <input type="hidden" name="remember" id="remember" value="on">
 
-                <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">ログイン</button>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">ログイン</button>
+                </div>
 
               </form>
 
               <div class="mt-0">
-                <a href="{{ route('register') }}" class="card-text">新規社員登録はこちら</a>
+                <a href="{{ route('register') }}" class="card-text">新規スタッフ登録はこちら</a>
               </div>
 
             </div>

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class TimeController extends Controller
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Time::class, 'time');
+    }
+
     public function index() {
             $times = Time::all()->sortByDesc('created_at');
             return view('times.index', ['times' => $times]);
@@ -22,6 +27,12 @@ class TimeController extends Controller
         $times->body = $request->body;
         $times->user_id = $request->user()->id;
         $times->save();
+        return redirect()->route('times.index');
+    }
+
+    public function destroy(Time $time)
+    {
+        $time->delete();
         return redirect()->route('times.index');
     }
 }

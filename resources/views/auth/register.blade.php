@@ -8,7 +8,7 @@
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         <div class="card mt-3">
           <div class="card-body text-center">
-            <h2 class="h3 card-title text-center mt-2">社員登録</h2>
+            <h2 class="h3 card-title text-center mt-2">新規スタッフ登録</h2>
 
             <div class="card-text">
               <form method="POST" action="{{ route('register') }}">
@@ -29,7 +29,9 @@
                   <label for="password_confirmation">パスワード(確認)</label>
                   <input class="form-control" type="password" id="password_confirmation" name="password_confirmation" required>
                 </div>
-                <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">登録</button>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">登録</button>
+                </div>
               </form>
 
               <div class="mt-0">
