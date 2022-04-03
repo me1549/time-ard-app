@@ -65,4 +65,7 @@
     @endforeach
   </div>
 
+  <br>
+  {{ $times->links('vendor.pagination.simple-bootstrap-4') }}
+
 @endsection

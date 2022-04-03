@@ -13,7 +13,9 @@ class TimeController extends Controller
     }
 
     public function index() {
-            $times = Time::all()->sortByDesc('created_at');
+            // $times = Time::all()->sortByDesc('created_at');
+            $all_times = Time::orderBy('created_at', 'desc');
+            $times = $all_times->with('user')->paginate(20);
             return view('times.index', ['times' => $times]);
     }
 
