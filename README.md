@@ -26,7 +26,7 @@ URL: http://times-card-app.herokuapp.com/
 
 <img width="389" alt="スクリーンショット 2022-04-03 16 16 38" src="https://user-images.githubusercontent.com/64354869/161416868-e364edc3-4dd2-4109-8f11-f37a4903f43c.png">
 
-トップページに「(名前さん）が（現在の時間）に出勤しました。」と表示されれば出勤完了です。業務を開始してください。
+トップページに「(名前）さんが（現在の時間）に出勤しました。」と表示されれば出勤完了です。業務を開始してください。
 
 <img width="700" alt="スクリーンショット 2022-04-03 16 17 18" src="https://user-images.githubusercontent.com/64354869/161416903-5e05d615-bf2d-4f44-8210-26659e6c6dd6.png">
 
@@ -36,7 +36,7 @@ URL: http://times-card-app.herokuapp.com/
 
 <img width="700" alt="スクリーンショット 2022-04-03 16 18 28" src="https://user-images.githubusercontent.com/64354869/161417142-af8c01f3-4ee0-40fe-afd1-618be5e93a7c.png">
 
-トップページに「(名前さん）が（現在の時間）に退勤しました。」と表示されれば退勤完了です。ログアウトして帰宅してください。お疲れ様でした。
+トップページに「(名前）さんが（現在の時間）に退勤しました。」と表示されれば退勤完了です。ログアウトして帰宅してください。お疲れ様でした。
 
 ## 使用技術
 - PHP(laravel)
