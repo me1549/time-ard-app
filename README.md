@@ -1,79 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 打刻アプリ
+## 概要
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+飲食店や商業施設などのスタッフの出勤時間と退勤時間を管理するwebアプリケーションです。<br/>
+URL: http://times-card-app.herokuapp.com/
 
-## About Laravel
+## 出勤方法
+### 1.右上の「ログイン」からメールアドレスとパスワードを入力してログインしてください。初出勤の方は右上の「新規スタッフ登録」から名前、メールアドレス、パスワードを入力して登録をしてください。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<img width="1434" alt="スクリーンショット 2022-04-03 16 13 14" src="https://user-images.githubusercontent.com/64354869/161506953-f2136d18-475f-482f-8455-1b347d2d7144.png">
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![スクリーンショット 2022-04-03 16 31 02](https://user-images.githubusercontent.com/64354869/161511726-79703c9a-eeec-4b66-8609-2e5c7b802f38.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<img width="633" alt="スクリーンショット 2022-04-03 16 14 55" src="https://user-images.githubusercontent.com/64354869/161507629-8c4e5228-671b-47d2-8ec3-1d7db0fdd6b9.png">
 
-## Learning Laravel
+既に同姓同名のスタッフがいる場合、同じ名前で登録できないようになっています。名前の横にあだ名を入力して登録してください。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<img width="568" alt="スクリーンショット 2022-04-04 17 48 11" src="https://user-images.githubusercontent.com/64354869/161508302-15e29ea2-9f9c-4ceb-ab28-b3dab6622c7f.png">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2.右上の「打刻する」から「出勤」を選択して「打刻する」をクリックしてください。
 
-## Laravel Sponsors
+<img width="1427" alt="スクリーンショット 2022-04-03 16 16 13" src="https://user-images.githubusercontent.com/64354869/161509686-d5f64eec-a86a-4be6-9286-1aaeff1a7ecc.png">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<img width="389" alt="スクリーンショット 2022-04-03 16 16 38" src="https://user-images.githubusercontent.com/64354869/161509711-754160dc-377b-48e5-bb6d-e2ab0fb3efc3.png">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+### 3.トップページに「（名前）さんが（日時）に出勤しました。」と表示されれば出勤完了です。業務を開始してください。
 
-## Contributing
+<img width="1433" alt="スクリーンショット 2022-04-03 16 17 18" src="https://user-images.githubusercontent.com/64354869/161510332-bc2294d5-1360-496f-9982-50014a98d587.png">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 退勤方法
+### 1.右上の打刻するから「退勤」を選んで「打刻する」をクリックしてください。
 
-## Code of Conduct
+<img width="283" alt="スクリーンショット 2022-04-03 16 18 11" src="https://user-images.githubusercontent.com/64354869/161511088-22540257-f661-4233-9754-5236de545d61.png">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 2.トップページに「（名前）さんが（日時）に退勤しました。」と表示されれば退勤完了です。右上の「ログアウト」をクリックして帰宅して下さい。
 
-## Security Vulnerabilities
+<img width="1431" alt="スクリーンショット 2022-04-03 16 18 28" src="https://user-images.githubusercontent.com/64354869/161511152-82f93907-db63-4822-b9cb-634fa1646631.png">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 使用技術
+- PHP(laravel)
+- JavaScript
+- bootstrap
+- postgresSQL
+- nginx
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# time-ard-app
+## 工夫した点
+名前(name)にユニーク制約をつけたため、同じ名前の方が入社した場合はあだ名を横に入力してもらい、管理する際に区別がつくようにしました。
