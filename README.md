@@ -15,7 +15,7 @@ URL: http://times-card-app.herokuapp.com/
 
 既に同姓同名のスタッフがいる場合、同じ名前で登録できないようになっています。名前の横にあだ名を入力して登録してください。
 
-<img width="568" alt="スクリーンショット 2022-04-04 17 48 11" src="https://user-images.githubusercontent.com/64354869/161508302-15e29ea2-9f9c-4ceb-ab28-b3dab6622c7f.png">
+<img width="573" alt="スクリーンショット 2022-04-04 18 39 28" src="https://user-images.githubusercontent.com/64354869/161519111-25d59777-138f-4344-af45-7502c6258e56.png">
 
 ### 2.右上の「打刻する」から「出勤」を選択して「打刻する」をクリックしてください。
 
@@ -44,4 +44,6 @@ URL: http://times-card-app.herokuapp.com/
 - nginx
 
 ## 工夫した点
-名前(name)にユニーク制約をつけたため、同じ名前の方が入社した場合はあだ名を横に入力してもらい、管理する際に区別がつくようにしました。
+新規スタッフ登録の名前にユニーク制約をつけ、同じ名前の方が入社した場合はあだ名を横に入力してもらい、管理する際に区別がつくようにしました。
+
+<img width="1429" alt="スクリーンショット 2022-04-04 18 23 55" src="https://user-images.githubusercontent.com/64354869/161517733-db5fbaa0-c76d-4201-9a87-f60780a44e0e.png">
