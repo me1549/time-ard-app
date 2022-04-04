@@ -36,6 +36,11 @@ URL: http://times-card-app.herokuapp.com/
 
 <img width="1431" alt="スクリーンショット 2022-04-03 16 18 28" src="https://user-images.githubusercontent.com/64354869/161511152-82f93907-db63-4822-b9cb-634fa1646631.png">
 
+## 削除方法
+### 右のバーから「記録を削除する。」で削除できます。
+
+<img width="1434" alt="スクリーンショット 2022-04-04 19 07 30" src="https://user-images.githubusercontent.com/64354869/161522381-71807b6a-f978-4785-9f32-faec4474a339.png">
+
 ## 使用技術
 - PHP(laravel)
 - JavaScript
