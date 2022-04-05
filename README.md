@@ -46,7 +46,6 @@ URL: http://times-card-app.herokuapp.com/
 - JavaScript
 - bootstrap
 - postgresSQL
-- nginx
 
 ## 工夫した点
 新規スタッフ登録の名前にユニーク制約をつけ、同じ名前の方が入社した場合はあだ名を横に入力してもらい、管理する際に区別がつくようにしました。
