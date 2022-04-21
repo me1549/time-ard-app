@@ -42,10 +42,10 @@ URL: http://times-card-app.herokuapp.com/
 <img width="1434" alt="スクリーンショット 2022-04-04 19 07 30" src="https://user-images.githubusercontent.com/64354869/161522381-71807b6a-f978-4785-9f32-faec4474a339.png">
 
 ## 使用技術
-- PHP(laravel)
+- PHP(Laravel)
 - JavaScript
 - bootstrap
-- postgresSQL
+- postgreSQL
 
 ## 工夫した点
 新規スタッフ登録の名前にユニーク制約をつけ、同じ名前の方が入社した場合はあだ名を横に入力してもらい、管理する際に区別がつくようにしました。
