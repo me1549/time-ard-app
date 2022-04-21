@@ -44,7 +44,7 @@ URL: http://times-card-app.herokuapp.com/
 ## 使用技術
 - PHP(Laravel)
 - JavaScript
-- bootstrap
+- Bootstrap
 - postgreSQL
 
 ## 工夫した点
